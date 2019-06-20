@@ -1,0 +1,68 @@
+html {
+    font-family: 'Source Sans Pro', sans-serf;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 0px;
+}
+
+.subtitle {
+    margin-top: 0px;
+}
+
+.game-container {
+    position: relative;
+    box-sizing: border-box;
+    height: 760px;
+}
+
+#iphone {
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    max-height: 760px;
+}
+
+#game {
+    margin: auto;
+    position: absolute;
+    z-index: 0;
+    left: 0px;
+    right: 0px;
+    top: 49px;
+}
+
+
+@media only screen and (max-width: 425px) {
+    /* For mobile phones: */
+    div > a {
+        display: none;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    .game-container {
+        width: 95vw;
+        height: 97vh;
+        overflow: hidden;
+    }
+
+    #iphone {
+        display: none;
+    }
+
+    #game {
+        top: 0px;
+        width: 95vw;
+        height: 206vw;
+    }
+}
